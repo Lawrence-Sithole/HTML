@@ -19,6 +19,7 @@
   <body>
     <h1>hello</h1>
     <a href="#section">Go to section</a> <!--link to a bit on the page by calling #id-->
+    <a href="#aside">Go to aside</a>
     <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5" width="100" height="100" > <!--title shows pop up text about image. width and height set w and h but can be over ridden by CSS. If width only is provided, it will scale accordingly-->
     <p>Contact me at<a href="mailto:random@email.co"> my email</a></p> <!--link to email address-->
     <p>Call me on <a href="tel:+447788556672">my mobile</a></p> <!--link phone number-->
@@ -54,7 +55,18 @@
       <figcaption> <!--caption under the figure-->
         caribbean beach getaway
       </figcaption>
-    </figure>
+    </figure> <br>
+    <hr>
+    <aside id="aside">
+      <details>
+        <summary>
+          summary lets you ...
+        </summary>
+        <p>
+          ...hide something in a drop-down
+        </p>
+      </details>
+    </aside>
     <p>
       <code>&lt;h1&gt; Hello World! &lt;h1/&gt;</code> <!--show code on the webpage-->
     </p>
@@ -64,5 +76,6 @@
     <p>
       <a href="/">back to home</a> <!--links back to the root i.e. index page-->
     </p>
+
   </body>
 </html>
