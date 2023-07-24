@@ -19,7 +19,7 @@
   <body>
     <h1>hello</h1>
     <a href="#section">Go to section</a> <!--link to a bit on the page by calling #id-->
-    <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5" > <!--title shows pop up text about image-->
+    <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5" width="100" height="100" > <!--title shows pop up text about image. width and height set w and h but can be over ridden by CSS. If width only is provided, it will scale accordingly-->
     <p>Contact me at<a href="mailto:random@email.co"> my email</a></p> <!--link to email address-->
     <p>Call me on <a href="tel:+447788556672">my mobile</a></p> <!--link phone number-->
     <p>Download <a href="SRS-logo-262w.webp" download="pic">image</a></p> <!--download link-->
@@ -49,6 +49,15 @@
       <dd>it ain't any better here</dd>
     </dl>
     <section id="section">this is a section</section> <!--used for sections of your project-->
+    <figure> <!--figure indents and allows for caption-->
+      <img src="img/caribbean.jpg" alt="caribbean" loading="lazy"> <!--loading comes as eager or lazy, eager loads fast but for images that are not visible on load, use lazy-->
+      <figcaption> <!--caption under the figure-->
+        caribbean beach getaway
+      </figcaption>
+    </figure>
+    <p>
+      <code>&lt;h1&gt; Hello World! &lt;h1/&gt;</code> <!--show code on the webpage-->
+    </p>
     <hr>
     <hr>
     &copy;Lawrence Sithole
