@@ -22,6 +22,7 @@
     <a href="#section">Go to section</a> <!--link to a bit on the page by calling #id-->
     <a href="#aside">Go to aside</a>
     <a href="#table">Go to table</a>
+    <a href="#contact">Contact me</a>
     <br>
     <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="HTML5" width="100" height="100" > <!--title shows pop up text about image. width and height set w and h but can be over ridden by CSS. If width only is provided, it will scale accordingly-->
     <p>Contact me at<a href="mailto:random@email.co"> my email</a></p> <!--link to email address-->
@@ -121,6 +122,32 @@
     </tfoot>
     </table>
     <hr>
+    <article id="contact">
+      <h2>Contact me</h2>
+      <p>I'd like to hear from you</p>
+      <form action="https://httpbin.org/get" method="get">
+        <p>
+          <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="name" autocomplete="on" required autofocus>
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="surname" autocomplete="on" required>
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+      </p>
+      <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="0161 111 4545" pattern="[0-9]{4} [0-9]{3} [0-9]{4}" required>
+      </p>
+      <p>
+        <label for="decade"> Favourite decade:</label>
+        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+      </p>
+      </form>
+    </article>
     <hr>
     &copy;Lawrence Sithole
     <p>
