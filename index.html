@@ -150,6 +150,35 @@
         <label for="decade"> Favourite decade:</label>
         <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
       </p>
+      <p>
+        <label for="coffees">Favourite Coffee:</label>
+        <input type="text" name="coffees" id="coffees" list="coffees-list">
+        <datalist id="coffees-list">
+          <option value="Coffee">
+          <option value="Latte">
+          <option value="Espresso">
+          <option value="Cortado">
+          <option value="Americano">
+          <option value="Other">
+        </datalist>
+      </p>
+      <p>
+        <label for="coffee">Favourite Coffee:</label>
+        <select name="coffee" id="coffee" multiple size="5">
+        <optgroup label="Coffees">
+          <option value="regularcoffee">Regular    Coffee</option>
+          <option value="iced coffee">Iced Coffee</option>
+        </optgroup>  
+        <optgroup label="Espresso Drinks">
+          <option value="latte">Latte</option>
+          <option value="cappuccino">Cappuccino</option>
+          <option value="cortado">Cortado</option>
+          <option value="americano">Americano</option>
+        </optgroup>  
+        <option value="other" selected>Other</option>
+       
+        </select>
+      </p>
       </form>
     </article>
     <hr>
